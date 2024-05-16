@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Color Change</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        height: 100vh;
+        background-color: #113f67;
+        display: grid;
+        place-items: center;
+      }
+      h1 {
+        font-size: 4rem;
+        color: #fff;
+        position: relative;
+      }
+      h1::before {
+        content: "PRATIK...";
+        color: yellow;
+        position: absolute;
+        border-right: 5px SOLID yellow;
+        width: 0%;
+        overflow: hidden;
+        animation: moveit 1s linear infinite alternate;
+      }
+      @keyframes moveit {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PRATIK...</h1>
+  </body>
+</html>
